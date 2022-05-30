@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    background-color: hsl(204, 43%, 93%);
+}
+main {
+    display: grid;
+    max-width: 50rem;
+    padding: 10px;
+}
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+            'top top'
+            'bt-left bt-right';
+    }
+    .top-section {
+        grid-area: top;
+    }
+    .bt-left-section {
+        grid-area: bt-left;
+    }
+    .bt-right-section {
+        grid-area: bt-right;
+    }
+}
+/*** TOP SECTION ***/
+.top-section {
+    background-color: white;
+    display: grid;
+    gap: 1.5rem;
+    padding: 30px;
+    border-radius: 6px 6px 0 0;
+}
+@media screen and (min-width: 700px) {
+    .top-section {
+        padding: 50px;
+    }
+}
+h1 {
+    font-size: 1.5rem;
+    color: hsl(179, 62%, 43%);
+}
+.top-section h2 {
+    font-size: 1.1rem;
+    color: hsl(71, 73%, 54%);
+}
+.top-section p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+/*** TOP SECTION -END- ***/
+
+/*** BOTTOM LEFT SECTION ***/
+.bt-left-section {
+    background-color: hsl(179, 62%, 43%);
+    display: grid;
+    gap: 0.5rem;
+    padding: 30px;
+}
+@media screen and (min-width: 700px) {
+    .bt-left-section {
+        padding: 50px;
+        border-radius: 0 0 0 6px;
+    }
+}
+.bt-left-section h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.bt-left-section span {
+    font-size: 2rem;
+    color: white;
+}
+.bt-left-section .text {
+    font-size: 1rem;
+    color: hsla(204, 43%, 93%, 0.7);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.bt-left-section p {
+    font-size: 1.05rem;
+    color: white;
+}
+.bt-left-section a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 30px;
+}
+/*** BOTTOM LEFT SECTION -END- ***/
+
+/*** BOTTOM RIGHT SECTION ***/
+.bt-right-section {
+    background-color: hsl(179, 62%, 50%);
+    display: grid;
+    gap: 1rem;
+    padding: 30px;
+    border-radius: 0 0 6px 6px;
+}
+@media screen and (min-width: 700px) {
+    .bt-right-section {
+        padding: 50px;
+        border-radius: 0 0 6px 0;
+    }
+}
+.bt-right-section h2 {
+    font-size: 1.3rem;
+    color: white;
+}
+.bt-right-section li {
+    font-size: 1rem;
+    color: hsla(204, 43%, 93%, 0.8);
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+/*** BOTTOM RIGHT SECTION -END- ***/
